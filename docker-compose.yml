@@ -25,7 +25,7 @@ services:
       - USE_LLM_API=1
       - OPENAI_API_KEY=sk-your-openai-key-here
       - OPENAI_API_BASE=https://api.openai.com/v1
-      - MODEL_NAME=Qwen/Qwen1.5-7B-Instruct
+      - MODEL_NAME=Qwen/Qwen3-8B
       - LANGUAGE=English
       
       # 新增配置

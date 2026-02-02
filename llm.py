@@ -11,8 +11,8 @@ class LLM:
             self.llm = OpenAI(api_key=api_key, base_url=base_url)
         else:
             self.llm = Llama.from_pretrained(
-                repo_id="Qwen/Qwen2.5-3B-Instruct-GGUF",
-                filename="qwen2.5-3b-instruct-q4_k_m.gguf",
+                repo_id="Qwen/Qwen3-4B-GGUF",
+                filename="qwen3-4b-q4_k_m.gguf",
                 n_ctx=5_000,
                 n_threads=4,
                 verbose=False,
