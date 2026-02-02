@@ -47,7 +47,7 @@ RUN mkdir -p /var/log/cron
 # 下载LLM模型 (如果使用本地LLM)
 RUN if [ "$USE_LLM_API" = "0" ]; then \
     mkdir -p /app/models \
-    wget https://huggingface.co/Qwen/Qwen3-4B-GGUF/resolve/main/qwen3-4b-q4_k_m.gguf -O /app/models/qwen.gguf; \
+    wget https://huggingface.co/Qwen/Qwen1.5-3B-Instruct-GGUF/resolve/main/qwen1.5-3b-instruct-q4_k_m.gguf -O /app/models/qwen.gguf; \
     fi
 
 # 设置容器启动命令（由compose覆盖）
